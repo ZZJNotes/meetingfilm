@@ -1,0 +1,16 @@
+server:
+  port: 7101
+
+spring:
+  application:
+    name: hello-service-provider
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://jiangzh:jiangzh123@127.0.0.1:8761/eureka/
+
+logging:
+  config: classpath:logback.xml

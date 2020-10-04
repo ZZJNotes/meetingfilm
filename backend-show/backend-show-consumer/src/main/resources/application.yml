@@ -1,0 +1,15 @@
+server:
+  port: 8201
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://jiangzh:jiangzh123@127.0.0.1:8761/eureka/
+
+
+spring:
+  application:
+    name: providerService
+
+logging:
+  config: classpath:logback.xml
