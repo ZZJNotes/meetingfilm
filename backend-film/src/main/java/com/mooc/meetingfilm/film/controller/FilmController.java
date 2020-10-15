@@ -1,8 +1,8 @@
 package com.mooc.meetingfilm.film.controller;
 
 import com.google.common.collect.Maps;
+import com.mooc.meetingfilm.api.film.vo.DescribeFilmsRespVO;
 import com.mooc.meetingfilm.film.controller.vo.DescribeActorsRespVO;
-import com.mooc.meetingfilm.film.controller.vo.DescribeFilmsRespVO;
 import com.mooc.meetingfilm.film.controller.vo.FilmSavedReqVO;
 import com.mooc.meetingfilm.film.service.FilmServiceAPI;
 import com.mooc.meetingfilm.utils.common.vo.BasePageVO;
@@ -44,7 +44,7 @@ public class FilmController {
     }
 
     // 根据电影编号查询电影信息接口
-    @GetMapping("/{filmId}")
+    @RequestMapping(value = "/{filmId}", method = RequestMethod.GET)
     public BaseResponseVO describeFilmById(@PathVariable String filmId) throws CommonServiceException{
         DescribeFilmsRespVO describeFilmRespVO = filmServiceAPI.describeFilmById(filmId);
 

@@ -22,6 +22,7 @@
         <module>backend-film</module>
         <module>backend-show</module>
         <module>backend-cinema</module>
+        <module>backend-api</module>
         <module>backend-eureka-server</module>
     </modules>
 
@@ -101,6 +102,12 @@
             <dependency>
                 <groupId>com.mooc.meetingfilm</groupId>
                 <artifactId>backend-user</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mooc.meetingfilm</groupId>
+                <artifactId>backend-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

@@ -1,7 +1,7 @@
 package com.mooc.meetingfilm.film.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.mooc.meetingfilm.film.controller.vo.DescribeFilmsRespVO;
+import com.mooc.meetingfilm.api.film.vo.DescribeFilmsRespVO;
 import com.mooc.meetingfilm.film.controller.vo.DescribeActorsRespVO;
 import com.mooc.meetingfilm.film.controller.vo.FilmSavedReqVO;
 import com.mooc.meetingfilm.utils.exception.CommonServiceException;

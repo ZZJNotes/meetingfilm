@@ -19,7 +19,7 @@
         <result column="film_status" property="filmStatus" />
     </resultMap>
 
-    <select id="describeFilmById" resultType="com.mooc.meetingfilm.film.controller.vo.DescribeFilmsRespVO">
+    <select id="describeFilmById" resultType="com.mooc.meetingfilm.api.film.vo.DescribeFilmsRespVO">
         SELECT
          film.`UUID` AS filmId,
          film.`film_name` AS filmName,
@@ -44,7 +44,7 @@
         ON film.`UUID` = info.`film_id`
         where film.`uuid` = #{filmId}
     </select>
-    <select id="describeFilms" resultType="com.mooc.meetingfilm.film.controller.vo.DescribeFilmsRespVO">
+    <select id="describeFilms" resultType="com.mooc.meetingfilm.api.film.vo.DescribeFilmsRespVO">
          SELECT
          film.`UUID` AS  filmId,
          film.`film_status` AS filmStatus,
