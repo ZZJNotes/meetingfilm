@@ -24,6 +24,7 @@
         <module>backend-cinema</module>
         <module>backend-api</module>
         <module>backend-eureka-server</module>
+        <module>backend-apigw-zuul</module>
     </modules>
 
     <properties>
@@ -108,6 +109,12 @@
             <dependency>
                 <groupId>com.mooc.meetingfilm</groupId>
                 <artifactId>backend-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mooc.meetingfilm</groupId>
+                <artifactId>backend-apigw-zuul</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
